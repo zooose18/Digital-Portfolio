@@ -1,0 +1,6 @@
+ErrorDocument 404 http://codinghobby.epizy.com/portfolio/Digital%20Portfolio/404.html
+
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

@@ -1,0 +1,114 @@
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+:root {
+  --main-clr: #66B808;
+  --body-clr: #F4F4F4;
+  --secondary-clr: #000;
+  --text-clr: #959595;
+  --nav-clr: #0a0a23;
+  --white-clr: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "sans-serif", serif;
+}
+
+body {
+  background: var(--body-clr);
+  color: var(--text-clr);
+  overflow: hidden;
+}
+
+img {
+  float: left;
+}
+
+main {}
+
+/* name and about*/
+.name-container {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+  padding: 10%;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--main-clr);
+  border: var(--body-clr);
+}
+
+/*
+.name::after {
+  content: url(https://cdn.onlinewebfonts.com/svg/img_451625.png) 40px;
+  width: 40px;
+  height: 40px;
+} */
+h1 a {
+  text-decoration: none;
+  color: var(--main-clr);
+}
+
+.tool-tip[data-tool-tip] {
+  position: relative;
+  width: 25px;
+  height: 10px;
+}
+
+.tool-tip[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: grey;
+  padding: .25rem 0.75rem;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.50em;
+  bottom: 0%;
+  left: 0%;
+  white-space: nowrap;
+  transform: scale(0);
+  transition:
+    transform ease-out 150ms,
+    bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
+}
+
+.mini-bio {
+  font-family: "sans-serif", serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+/*
+@media(prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #ddd;
+      color: #000;
+    }
+  }
+}
+
+/* dark mode
+https://youtu.be/wodWDIdV9BY?t=139
+ */

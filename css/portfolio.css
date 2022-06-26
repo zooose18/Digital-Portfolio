@@ -1,0 +1,83 @@
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+:root {
+  --main-clr: #66b808;
+  --body-clr: #f4f4f4;
+  --secondary-clr: #000;
+  --text-clr: #959595;
+  --nav-clr: #0a0a23;
+  --white-clr: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "sans-serif", serif;
+  /* height: 100vh; */
+}
+
+body {
+  background: var(--body-clr);
+  -webkit-webkit-: var(--body-clr);
+  -moz-webkit-: var(--body-clr);
+  -ms-webkit-: var(--body-clr);
+  -o-webkit-: var(--body-clr);
+  webkit-: var(--body-clr);
+  /* background: blue; */
+  color: var(--text-clr);
+  overflow: hidden;
+  height: 100vh;
+}
+
+/*
+main {
+  background: red;
+} */
+.project-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  /* margin-top: 15%; */
+}
+
+.project .sub-title {
+  color: var(--secondary-clr);
+}
+
+.project .info {
+  color: #fff;
+}
+
+.project-1,
+.project-2 {
+  /* width: 130%; */
+  padding-top: 5%;
+}
+
+.project-1 img,
+.project-2 img {
+  width: 90%;
+  border: solid 3px var(--main-clr);
+}
+
+h1 {
+  color: var(--secondary-clr);
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+  }
+
+  /*
+  .project-container img {
+    width: 60%;
+  }
+
+  */
+}

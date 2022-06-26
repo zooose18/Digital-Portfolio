@@ -1,0 +1,146 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "sans-serif", serif;
+}
+
+:root {
+  --main-clr: #66B808;
+  --body-clr: #F4F4F4;
+  --secondary-clr: #000;
+  --text-clr: #959595;
+  --nav-clr: #0a0a23;
+  --white-clr: #fff;
+}
+
+nav {
+  height: 90px;
+  background-color: var(--nav-clr);
+  color: var(--white-clr);
+}
+
+nav #logo {
+  float: left;
+  position: absolute;
+  /* padding: 15px; */
+}
+
+.name-logo {
+  float: left;
+  padding: 15px;
+}
+
+nav ul {
+  text-align: center;
+  padding-top: 2%;
+}
+
+nav li {
+  float: inherit;
+  display: inline;
+  position: relative;
+}
+
+nav a {}
+
+nav .underline:hover {
+  border-bottom: solid var(--main-clr);
+}
+
+nav a {
+  list-style: none;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--nav-txt-clr);
+}
+
+:focus {
+  outline: none;
+  border-bottom: solid var(--main-clr);
+}
+
+/* social links */
+.icon-box {
+  /* display: flex; */
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+i {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.media-hover {
+  display: none;
+}
+
+.fab {
+  font-size: 1.5625rem;
+}
+
+.gh-link:hover {
+  color: #666666;
+  /* text-decoration: underline; */
+}
+
+.ig-link:hover {
+  color: #a02dc2;
+  /* text-decoration: underline; */
+  /* background: url(../images/instagram.jpg); */
+}
+
+.li-link:hover {
+  color: #0077b5;
+  /* text-decoration: underline; */
+}
+
+/* end of social links */
+/* @media screen and (max-width: 950px) {
+  .icon-box {
+    z-index: 1;
+    top: 14%;
+    right: 5%;
+    color: #888;
+    border-bottom: 1px solid transparent;
+    flex-direction: column;
+  }
+
+  .icon-box:hover {
+    display: flex;
+    z-index: 1;
+    border-bottom: 2px transparent;
+    margin-bottom: -1px;
+  }
+
+  .icon-box a {
+    display: none;
+  }
+
+  .icon-box:hover a {
+    display: flex;
+  }
+
+  .media-hover {
+    display: flex;
+    width: 60px;
+    height: 60px;
+  }
+
+  .socials {}
+} */
+/* text-decoration: underline; */
+/* targeted *>
+
+/* sources
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY()
+https://thoughtbot.com/blog/transitions-and-transforms
+https://stackoverflow.com/questions/9612758/add-a-css-border-on-hover-without-moving-the-element
+ */
+/* Push 2.00*/

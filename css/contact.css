@@ -1,0 +1,73 @@
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+:root {
+  --main-clr: #66B808;
+  --body-clr: #F4F4F4;
+  --secondary-clr: #000;
+  --text-clr: #959595;
+  --nav-clr: #0a0a23;
+  --white-clr: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "sans-serif", serif;
+}
+
+body, html {
+  background: var(--body-clr);
+  -webkit-background: var(--body-clr);
+  overflow: hidden;
+}
+
+form {
+  display: table;
+  position: absolute;
+  background: var(--main-clr);
+  padding-top: 4%;
+  padding-left: 4%;
+  top: 40%;
+  left: 30%;
+  border: #CCC solid 1px;
+  width: 40%;
+  height: 40%;
+}
+
+.info-txt {
+  position: absolute;
+  text-align: center;
+  left: 45%;
+  top: 37%;
+  z-index: 1;
+  font-size: 22px;
+}
+
+.input-ali {
+  display: inline-flex;
+}
+
+.left-form {
+  display: ;
+  top: 0;
+}
+
+.right-form {
+  display: ;
+  top: 0;
+}
+
+textarea {}
+
+input:focus {
+  border: red;
+}
+
+input:active {
+  border-color: red;
+  decoration: none;
+}

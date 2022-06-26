@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'dominebold';
+    src: url('Domine-Bold-webfont.eot');
+    src: url('Domine-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Domine-Bold-webfont.woff2') format('woff2'),
+         url('Domine-Bold-webfont.woff') format('woff'),
+         url('Domine-Bold-webfont.ttf') format('truetype'),
+         url('Domine-Bold-webfont.svg#dominebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

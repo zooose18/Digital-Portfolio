@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "sans-serif", serif;
+  /* background: #f4f4f4; */
+}
+
+body, html {
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* https://youtu.be/kPtS4vO42II?t=435 */
+div .error-box {
+  top: 40%;
+  display: inline;
+}
+
+h1.error-title {
+  color: rgb(160, 45, 24);
+  text-align: center;
+  font-size: 3.75rem;
+  padding-top: 10%;
+}
+
+p {
+  color: grey;
+  text-align: center;
+}
+
+a .url {
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+
+/*
+span.test {
+  color: red;
+} */
+/* 1.0 */

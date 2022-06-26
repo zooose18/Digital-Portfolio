@@ -1,0 +1,99 @@
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+:root {
+  --main-clr: #66b808;
+  --body-clr: #f4f4f4;
+  --secondary-clr: #000;
+  --text-clr: #959595;
+  --nav-clr: #0a0a23;
+  --white-clr: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "sans-serif", serif;
+}
+
+body {
+  background: var(--body-clr);
+  overflow: hidden;
+}
+
+.grid {}
+
+.container {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  grid: repeat(4, 35%) / auto-flow 35%;
+  /* grid-auto-rows: auto; */
+  /* background: pink; */
+}
+
+.skills {
+  background: #66b808;
+  text-align: center;
+  /* break */
+  grid-column: 1;
+  grid-row: 2/3;
+}
+
+.skills h1 {
+  display: inline-block;
+  padding-top: 2rem;
+  color: var(--secondary-clr);
+}
+
+.skills p {
+  color: var(--body-clr);
+}
+
+.js {
+  text-decoration: line-through;
+  color: black;
+}
+
+.skills h2 {
+  padding-top: 1.5rem;
+}
+
+.about-me {
+  margin: 5% 10%;
+  /* break */
+  font-size: 1.5625rem;
+  font-weight: 200;
+  border: solid #66b808 2px;
+  /* grid */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.about-me p {}
+
+/* Responsive layout... */
+@media all and(min-width: 350px) {
+  .skills {
+    width: 150px;
+    height: 225px;
+    padding-top: 1rem;
+    color: red;
+  }
+
+  .skills p {
+    font-size: 1rem;
+    color: red;
+  }
+}
+
+/* https://youtu.be/yU7jJ3NbPdA?t=315 */
+/* 2 https://youtu.be/bn-DQCifeQQ?t=999 */
+/* tut hell https://youtu.be/QqDH5sYzDS8?t=117 */
